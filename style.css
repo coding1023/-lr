@@ -1,0 +1,487 @@
+@font-face {
+    font-family: 'Lemon Milk';
+    src: url('LEMONMILK-Regular.otf');
+ 
+  }
+
+  @font-face {
+  
+    font-family: 'Coolvetica';
+    src: url('coolvetica\ rg.otf');
+
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Coolvetica';
+
+    box-sizing: border-box;
+}
+
+
+main{
+  margin-bottom: 40vh;
+}
+
+
+.nav-links {
+    list-style: none;
+    
+}
+.nav-links li {
+  
+    font-size: 1.2rem;
+ 
+}
+.nav-links a{
+  color: #1B264F!important;
+}
+#logo { 
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.big-text {
+    position: relative;
+ margin-top: 1vh;
+  font-size: 3.5rem;
+ 
+  color: #1B264F;
+  font-family: 'Coolvetica';
+
+}
+
+.sub-heading{
+  
+  font-family: 'Coolvetica';
+  color: #1c1917;
+}
+
+.intro {
+    background: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    background: #1B264F;;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   transform: translateY(100%);
+   
+}
+
+.intro-text {
+    color: #dbd8d8;
+   
+
+    font-size: 3rem;
+    
+}
+
+.hide {
+    background: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+
+#avatar{
+  width: 15%;
+  height: auto;
+  margin-bottom: 5vh;
+}
+/* 
+.bg-triangle {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  } */
+/* 
+ .div-triangle-tl{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vmin;
+    height: 100vmin;
+    aspect-ratio:1;
+    background: linear-gradient(45deg, red, blue);
+    clip-path:polygon(0 0,100% 0,0 100%);
+ }
+
+ .div-triangle-tr{
+    position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: url('/pictures/bg.jpg')  cover no-repeat;
+ } */
+
+
+ /* Code that does the work */
+
+.div-one {
+  background:linear-gradient(to bottom,#ffffff25,
+   #f1040475),url('pictures/beatenberg-2063366_1280.jpg'); ;
+  padding: 0rem 5rem;
+    width: 100vw;
+    height: 100vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding: 2rem 0;
+    position: absolute;
+
+  }
+  
+  .div-two {
+    -webkit-clip-path: polygon(100vw 0, 0% 100%, 100vw 100vh);
+    clip-path: polygon(100vw 0, 0% 100vh, 100vw 100vh);
+     background: url('pictures/beatenberg-2063366_1280.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+ position: relative;
+
+  }
+  
+  body {
+    margin: 0;
+  }
+ 
+  
+
+  .box {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform:translate(-50%, -50%); 
+    text-align: center; color: rgba(250, 250, 250, 0.512); 
+    border: 4px double rgba(13, 3, 3, 0.466);
+    width:auto;
+  }
+  
+  .box h1 {
+    padding: 0 1em; 
+    position: relative;
+  }
+
+
+
+  
+
+
+
+
+
+/* Responsive web design popup */
+
+
+.hover {
+  transform: perspective(1000px) translateZ(200px);
+}
+
+.progress{
+  height:25px!important;
+  background-color: #2221215f!important;
+ font-size: 1rem!important;
+ border-radius: 0!important;
+}
+
+.header-title{
+  color: #1B264F;
+  font-size: 2.5rem;
+  margin-bottom:3vh;
+  font-family: 'Lemon Milk';
+}
+
+
+
+
+.slide1 {
+  transform-style: preserve-3d;
+transition: 6s;
+}
+
+.bgrow {
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+.coverL{
+
+  font-size: 1.2em;
+font-family: 'Coolvetica', sans-serif;}
+
+
+
+
+.project-title{
+  font-size: 2rem;
+  
+  margin: 20vh auto 5vh auto;
+  color: #1B264F;
+}
+#proj{
+  margin-top: 20vh;
+  color: #1B264F;
+  font-family: 'Lemon Milk';
+  font-size: 2.8rem;
+
+}
+
+
+
+.img-wrapper {
+  width: 20%;
+  height: auto;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+.img-wrapper img {
+  max-width: 100%;
+  max-height: auto;
+  position: relative;
+  vertical-align: middle;
+  max-height: 400px;
+
+height: 250px;
+  width: 500px;
+  object-fit:cover;
+animation:4s;
+  transition: transform .4s; /* Animation */
+ 
+}
+.img-wrapper img:hover{
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.figure-caption{
+  font-size: 1rem!important;
+  letter-spacing: 2px;
+  color: #1B264F!important;
+  margin-top: 1vh;
+}
+
+
+/* FOOTER */
+
+.footer{
+  
+ background:linear-gradient(to bottom,#000000,
+#00000099), url("./pictures/beatenberg-2063366_1280.jpg") ;
+background-repeat: no-repeat;
+background-attachment: fixed;
+border: none;
+background-position: center;
+background-size: cover;
+
+padding: 2rem;
+}
+
+
+.perc{
+  position: absolute;
+  right: 2px;
+  color: #1B264F;
+  letter-spacing: 1px;
+  font-family: 'Coolvetica';
+  font-weight: 900!important;
+}
+
+
+.reveal{
+  position: relative;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: 0.8s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+
+}
+
+
+.loader-section{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 25%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+}
+
+.loader{
+height: 50px;
+transform-origin: bottom center;
+animation: rotate 2s linear infinite;
+
+}
+
+.circle{
+background-color: #1B264F;;
+height: 40px;
+width: 40px;
+border-radius: 50%;
+margin: -10px;
+animation: grow 1.5s linear infinite;
+transform: scale(0);
+display: inline-block;
+
+}
+.circle:nth-child(2){
+background-color: #fff;
+animation-delay: 0.75s;
+}
+
+@keyframes rotate {
+to{
+  transform: rotate(360deg);
+}
+
+}
+
+@keyframes grow {
+50% {
+  transform: scale(1);
+}
+}
+
+
+.info-col{
+  margin-top: 25vh!important;
+
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.intro-col{
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.skills-col {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.logo-ft{
+  margin-top: 2em;
+ max-width: 40%;
+ max-height: 40%;
+}
+
+ul{
+  list-style: none;
+ 
+}
+
+.about-footer{
+  color: #fff;
+  font-family: 'Coolvetica';
+ 
+  font-size: 1.2em;
+  font-weight: 400;
+  
+}
+
+
+.night-toggle{
+  color: #1B264F;
+
+ background-color: transparent;
+cursor: pointer;
+font-weight: 600;
+
+text-shadow: 0px 2px 1px rgba(10, 10, 10, 0.4),
+           0px 2px 1px rgba(32, 29, 29, 0.1),
+           0px 1px 2px rgba(12, 8, 8, 0.1);
+}
+.night-toggle:hover{
+color: #8f2121!important;
+}
+
+
+@media screen and (max-width: 600px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+.navbar {position: relative;
+}
+.img-wrapper img {
+
+  max-height: auto;
+  position: relative;
+  vertical-align: middle;
+
+
+height:auto;
+  width: 500px;
+  object-fit:cover;
+animation:4s;
+  transition: transform .4s; /* Animation */
+ 
+}
+.name {
+   float: none;
+  display: block;
+  text-align: left;
+  
+}
+
+.nav-item,projects{
+    margin: 1rem;
+}
+
+.navbar a {
+      float: none;
+  display: block;
+  text-align: left;
+}
+
+#skills-projects{
+  display: inline-block;
+}
+#proj{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.projects-title{
+  margin-top: 0;
+  padding-top: 0;
+}
+} 
+
+
