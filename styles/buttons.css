@@ -102,5 +102,5 @@ background: linear-gradient(360deg, transparent,var(--blue-1));
 {
 	bottom:100%;
 	transition: 1s;
-	transition-delay: 0.15s;
+	transition-delay: 0.75s;
 }
